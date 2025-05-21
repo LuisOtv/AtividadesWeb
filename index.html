@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hub de Projetos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="window">
+        <div class="title-bar">
+            <div class="title-bar-text">Hub de Projetos - Program Manager</div>
+            <div class="title-bar-controls">
+                <div class="title-bar-button">_</div>
+                <div class="title-bar-button">□</div>
+            </div>
+        </div>
+        <div class="desktop">
+            <a class="desktop-icon" href="Form/index.html" target="_blank">
+                <div class="icon-img">⚽️</div>
+                <div class="icon-label">Form</div>
+            </a>
+            <a class="desktop-icon" href="LoginPage/index.html" target="_blank">
+                <div class="icon-img">🔐</div>
+                <div class="icon-label">LoginPage</div>
+            </a>
+            <a class="desktop-icon" href="Pamonha/index.html" target="_blank">
+                <div class="icon-img">🌽</div>
+                <div class="icon-label">Pamonha</div>
+            </a>
+            <a class="desktop-icon" href="Portfolio/index.html" target="_blank">
+                <div class="icon-img">💼</div>
+                <div class="icon-label">Portfolio</div>
+            </a>
+            <a class="desktop-icon" href="RecipePage/index.html" target="_blank">
+                <div class="icon-img">🧁</div>
+                <div class="icon-label">RecipePage</div>
+            </a>
+            <a class="desktop-icon" href="TravelGram/index.html" target="_blank">
+                <div class="icon-img">✈️</div>
+                <div class="icon-label">TravelGram</div>
+            </a>
+        </div>
+    </div>
+    <div class="taskbar">
+        <div class="taskbar-start">
+            <div>🖥️</div>
+            <div>Início</div>
+        </div>
+        <div class="taskbar-time">12:00</div>
+    </div>
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const timeDisplay = document.querySelector('.taskbar-time');
+            timeDisplay.textContent = now.toLocaleTimeString('pt-BR', {
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+        }
+
+        updateClock();
+        setInterval(updateClock, 1000);
+    </script>
+</body>
+
+</html>

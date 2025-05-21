@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
+
+body {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Source Serif 4", serif;
+}
+.top,
+.bottom {
+  background-color: #feece0;
+  width: 1000px;
+  height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.top {
+  .right {
+    align-items: start;
+  }
+  .heroimage {
+    width: 300px;
+  }
+  h1,
+  h3 {
+    line-height: 20px;
+    color: #58190a;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  .portions {
+    color: #9b6647;
+  }
+  .selector {
+    display: flex;
+    height: 40px;
+    width: 200px;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.bottom {
+  background-color: #9b6647;
+
+  h1,
+  h2,
+  ol,
+  ul {
+    color: #feece0;
+    font-family: "Source Serif 4", serif;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  ol,
+  ul,
+  li {
+    font-size: 20px;
+    font-family: "Source Serif 4", serif;
+    font-weight: 600;
+  }
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.icon {
+  padding-right: 20px;
+}
+
+button {
+  display: flex;
+  height: 40px;
+  width: 40px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: transparent;
+  border-color: transparent;
+}
