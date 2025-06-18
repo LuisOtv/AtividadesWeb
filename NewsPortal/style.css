@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Archivo;
+    color: white;
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    flex-direction: column;
+    display: flex;
+    max-width: 1280px;
+    background-color: #0F172A;
+    padding: 20px;
+}
+
+.header {
+    padding: 20px 0;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #334155;
+    margin-bottom: 20px;
+}
+
+.subHeader {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.subHeader h2 {
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.heroContent {
+    gap: 20px;
+    display: flex;
+    padding-bottom: 60px;
+}
+
+.bigCard {
+    position: relative;
+    width: 100%;
+    max-width: 608px;
+    overflow: hidden;
+}
+
+.bigCard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.cardTag {
+    border-radius: 5px;
+    width: fit-content;
+    background-color: #3B82F6;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 4px 8px;
+}
+
+.fourPanel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    max-width: 600px;
+    flex: 1;
+}
+
+.smallCard {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.smallCard img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.textOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    color: white;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.smallCard .textOverlay p {
+    font-size: 10px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.smallCard .textOverlay h1 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.bigCard .textOverlay p {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.bigCard .textOverlay h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.mostRead {
+    padding-bottom: 60px;
+}
+
+.mostRead h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.readItem {
+    width: 100%;
+    max-width: 280px;
+    overflow: hidden;
+    font-family: Archivo;
+}
+
+.imageContainer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.imageContainer img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+}
+
+.readTag {
+    border-radius: 5px;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background-color: #3B82F6;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 4px 8px;
+    text-transform: uppercase;
+}
+
+.textBox {
+    padding: 0;
+}
+
+.textBox h3 {
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+}
+
+.bottom {
+    display: flex;
+    gap: 40px;
+}
+
+.left {
+    width: 65%;
+}
+
+.right {
+    width: 35%;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.top h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.seeAll {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    color: #3B82F6;
+}
+
+.seeAll h3 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.high {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+
+.high:last-child {
+    border-bottom: none;
+}
+
+.highText {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.highText h1 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.highImg {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+}
+
+.sidebar {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.sidebarItem {
+    display: flex;
+    gap: 10px;
+}
+
+.sidebarText {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.highTag {
+    border-radius: 5px;
+    background-color: #3B82F6;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 4px 8px;
+    text-transform: uppercase;
+    width: fit-content;
+}
+
+.sidebarItem h4 {
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+}
